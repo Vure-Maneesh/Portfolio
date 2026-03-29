@@ -1202,18 +1202,38 @@ function ContactView() {
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const sub = e => {
+  const sub = (e) => {
     e.preventDefault();
-    setLoading(true);
 
-    setTimeout(() => {
-      setSent(true);
-      setLoading(false);
-      setForm({ name: "", email: "", subject: "", message: "" });
+    const { name, email, subject, message } = form;
 
-      setTimeout(() => setSent(false), 5000);
-    }, 1500);
+
+    const receiver = "maneeshvure1301@mail.com"; // <-- YOUR email here
+
+    const mailSubject = encodeURIComponent(subject);
+
+    const mailBody = encodeURIComponent(
+      `Hello,
+
+You received a new message from your portfolio:
+
+👤 Name: ${name}
+📧 Email: ${email}
+📌 Subject: ${subject}
+
+📝 Message:
+${message}
+
+---
+Sent from your portfolio website`
+    );
+
+    const mailtoLink = `mailto:${receiver}?subject=${mailSubject}&body=${mailBody}`;
+
+    window.location.href = mailtoLink;
   };
+
+
 
   return (
     <div className="sec-wrap contact-sec">
@@ -1261,7 +1281,7 @@ function ContactView() {
               <div>
                 <div style={{ fontWeight: 600 }}>Location</div>
                 <div style={{ fontSize: 12, color: "var(--text3)", marginTop: 2 }}>
-                  Chinthapally, India
+                  Hyderabad,Telangana, India
                 </div>
               </div>
             </div>
@@ -1414,7 +1434,7 @@ function Footer({ navigate }) {
           {[
             { icon: "📧", label: "Email", val: "maneeshvure1301@gmail.com" },
             { icon: "📱", label: "Phone", val: "+91 8374343597" },
-            { icon: "📍", label: "Location", val: "Chinthapally, India" },
+            { icon: "📍", label: "Location", val: "Hyderabad,Telangana, India" },
             { icon: "🏢", label: "Currently at", val: "Infosys (Software Developer Intern)" },
             { icon: "🎓", label: "Education", val: "B.Tech CSE · JNTUHUCER" }
           ].map(c => (
