@@ -808,7 +808,7 @@ const projects = [
   {
     name: "Bank Management System",
     cat: "Backend Application",
-    img: "src/assets/bank.png",
+    img: "./assets/bank.png",
     highlight: "Core Java Project",
     bg: "linear-gradient(135deg,#0f172a,#1e293b)",
     desc: "Built a Java-based banking application implementing account management, deposits, withdrawals, and secure login. Applied OOP principles with input validation and exception handling. Additionally developed a basic frontend using Angular, leveraging AI-assisted tools to accelerate UI development.",
@@ -866,7 +866,7 @@ const experiences = [
 const education = [
   {
     icon: "🎓",
-    logo: "src/assets/jntuh.png",
+    logo: "./assets/jntuh.png",
     degree: "Bachelor of Technology (B.Tech)",
     major: "Computer Science & Engineering",
     school: "JNTUH University College of Engineering, Sircilla",
@@ -877,7 +877,7 @@ const education = [
   },
   {
     icon: "🏫",
-    logo: "src/assets/candor.png",
+    logo: "./assets/candor.png",
     degree: "12th (CBSE)",
     major: "Science (PCM)",
     school: "Candor Shrine Senior Secondary School",
@@ -888,7 +888,7 @@ const education = [
   },
   {
     icon: "🏫",
-    logo: "src/assets/candor.png",
+    logo: "./assets/candor.png",
     degree: "10th (CBSE)",
     major: "General Studies",
     school: "Candor Shrine Senior Secondary School",
@@ -900,14 +900,14 @@ const education = [
 ];
 
 const certifications = [
-  { icon: "🏅", logo: "src/assets/infosys.png", name: "Programming using Java", org: "Infosys Springboard", year: "2025", highlight: "Core Java" },
-  { icon: "🏅", logo: "src/assets/infosys.png", name: "Data Structures & Algorithms using Java", org: "Infosys Springboard", year: "2025", highlight: "DSA" },
-  { icon: "🏅", logo: "src/assets/infosys.png", name: "Database Management System", org: "Infosys Springboard", year: "2025", highlight: "DBMS" },
-  { icon: "🏅", logo: "src/assets/infosys.png", name: "Introduction to NoSQL databases", org: "Infosys Springboard", year: "2025", highlight: "DBMS" },
-  { icon: "🏅", logo: "src/assets/infosys.png", name: "AI-first Software Engineering", org: "Infosys Lex", year: "2025", highlight: "AI" },
+  { icon: "🏅", logo: "./assets/infosys.png", name: "Programming using Java", org: "Infosys Springboard", year: "2025", highlight: "Core Java" },
+  { icon: "🏅", logo: "./assets/infosys.png", name: "Data Structures & Algorithms using Java", org: "Infosys Springboard", year: "2025", highlight: "DSA" },
+  { icon: "🏅", logo: "./assets/infosys.png", name: "Database Management System", org: "Infosys Springboard", year: "2025", highlight: "DBMS" },
+  { icon: "🏅", logo: "./assets/infosys.png", name: "Introduction to NoSQL databases", org: "Infosys Springboard", year: "2025", highlight: "DBMS" },
+  { icon: "🏅", logo: "./assets/infosys.png", name: "AI-first Software Engineering", org: "Infosys Lex", year: "2025", highlight: "AI" },
   { icon: "🏅", logo: "src/assets/infosys.png", name: "Introduction to Agile methodology", org: "Infosys Lex", year: "2025", highlight: "Agile" },
-  { icon: "🏅", logo: "src/assets/infosys.png", name: "Prompt Engineering", org: "Infosys Lex", year: "2025", highlight: "Prompt" },
-  { icon: "🏅", logo: "src/assets/infosys.png", name: "REST API using Spring", org: "Infosys Lex", year: "2025", highlight: "Spring" },
+  { icon: "🏅", logo: "./assets/infosys.png", name: "Prompt Engineering", org: "Infosys Lex", year: "2025", highlight: "Prompt" },
+  { icon: "🏅", logo: "./assets/infosys.png", name: "REST API using Spring", org: "Infosys Lex", year: "2025", highlight: "Spring" },
 ];
 
 const particles = Array.from({ length: 16 }, (_, i) => ({
