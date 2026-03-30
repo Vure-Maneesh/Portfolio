@@ -1335,7 +1335,7 @@ function ContactView() {
   const sub = (e) => {
     e.preventDefault();
     const { name, email, subject, message } = form;
-    const receiver = "maneeshvure1301@mail.com";
+    const receiver = "maneeshvure1301@gmail.com";
     const mailSubject = encodeURIComponent(subject);
     const mailBody = encodeURIComponent(
       `Hello,\n\nYou received a new message from your portfolio:\n\n👤 Name: ${name}\n📧 Email: ${email}\n📌 Subject: ${subject}\n\n📝 Message:\n${message}\n\n---\nSent from your portfolio website`
